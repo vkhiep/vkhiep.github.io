@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Mobile Website</title>
+ <meta charset="utf-8">
+ <title>Trang web tải xuống</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="style.css">
+ <style>
+  .box {
+   display: inline-block;
+   position: relative;
+   margin: 1em;
+   padding: 0;
+  }
+  
+  .box img {
+   display: block;
+   width: 100%;
+   height: auto;
+  }
+  
+  .box a {
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+  }
+  
+  .box button {
+   display: block;
+   position: absolute;
+   padding: 1em;
+   background-color: white;
+   color: black;
+   border: none;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+   font-size: 1em;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   margin: 0 auto;
+   top: calc(50% - 0.5em);
+   left: calc(50% - 0.5em);
+   cursor: pointer;
+  }
+ </style>
 </head>
-
 <body>
- <header>
-  <h1>Mobile Website</h1>
-  <nav>
-   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-   </ul>
-  </nav>
- </header>
-
- <main>
-  <section>
-   <h2>Welcome</h2>
-   <p>This is a mobile website!</p>
-  </section>
- </main>
-
- <footer>
-  <p>&copy; 2023 Mobile Website</p>
- </footer>
+ <div class="box">
+  <img src="https://i.imgur.com/tB9rVXl.jpg" alt="Hình ảnh tải xuống">
+  <a href="https://example.com/download">
+   <button>Tải xuống</button>
+  </a>
+ </div>
 </body>
 </html>
